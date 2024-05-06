@@ -1,38 +1,232 @@
-.App {
+body {
+  overflow-x: hidden;
+}
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: #24053e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin-left: 150px;
+}
+.apply {
+  color: white;
+  border-bottom: 3px solid #44ffa1;
+  font-size: 1.125rem;
+  padding-bottom: 3px;
+  margin-right: 150px;
+}
+.apply:hover {
+  color: #44ffa1;
+  cursor: pointer;
+}
+.border {
+  width: 100%;
+}
+.border-second {
+  width: 100%;
+  position: relative;
+  top: -100px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-color: #24053e;
+  width: 100%;
+  height: 45vh;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  background-color: #24053e;
+  color: white;
+  font-size: 5rem;
+  max-width: 635px;
   text-align: center;
 }
+.tail {
+  border-bottom: 3px solid #44ffa1;
+}
+.button-learn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #44ffa1;
+  min-width: 161px;
+  height: 61px;
+  font-size: 1.125rem;
+}
+.button-learn:hover {
+  background-color: transparent;
+  color: #44ffa1;
+  background: none;
+  border: solid 2px #44ffa1;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+.bg-pattern1 {
+  position: absolute;
+  left: -140px;
+}
+.bg-pattern2 {
+  position: absolute;
+  right: -50px;
+  bottom: 250px;
+}
+.phone {
+  max-width: 767px;
+  min-width: 320px;
+  position: absolute;
+  bottom: -350px;
+}
+.phone > img {
+  width: 100%;
+}
+.second-section {
+  position: relative;
+  display: flex;
+  z-index: -6;
+  justify-content: center;
+  gap: 30px;
+  background-color: #fcf8ff;
+  height: 100%;
+  padding-top: 300px;
+  align-items: flex-end;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  top: -100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.second-items {
+  max-width: 354px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second-title {
+  font-size: 2rem;
+}
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 56px;
+  aspect-ratio: 1;
+  font-size: 1.5rem;
+}
+.second-items p {
+  font-size: 1.125rem;
+}
+.third-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.third-text {
+  background-color: #24053e;
+  padding: 63px;
+  color: white;
+  max-width: 602px;
+  min-width: 281px;
+  font-size: 1.125rem;
+  position: relative;
+}
+.third-text > p {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.bg-pattern3 {
+  position: absolute;
+  right: 70px;
+  bottom: -70px;
+}
+.margin-top {
+  margin-top: 30px;
+}
+.avatar-con {
+  max-width: 400px;
+
+  position: relative;
+  top: -100px;
+}
+.avatar-img {
+  max-width: 477px;
+}
+.footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 50px;
 }
-
-.App-link {
-  color: #61dafb;
+.socials {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+svg {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .second-section {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: ;
   }
-  to {
-    transform: rotate(360deg);
+  .logo {
+    margin-left: 20px;
+  }
+  .apply {
+    margin-right: 20px;
+  }
+  .second-section {
+    padding-top: 400px;
+  }
+  .phone {
+    bottom: -250px;
+  }
+  .avatar-con {
+    width: 230px;
+    top: -260px;
+    right: -70px;
+  }
+  .avatar-img {
+    width: 281px;
+  }
+}
+@media (max-width: 500px) {
+  .third-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .avatar-con {
+    top: 50px;
+    right: 0;
+  }
+  .bg-pattern1 {
+    display: none;
+  }
+  .bg-pattern2 {
+    display: none;
+  }
+  .bg-pattern3 {
+    display: none;
   }
 }
